@@ -189,3 +189,13 @@ document.getElementById("submit").addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+// blog button 
+document.getElementById('blog-button').addEventListener('click', function(){
+  location.href="blog.html";
+
+
+
+
+
+})
