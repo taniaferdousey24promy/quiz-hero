@@ -79,7 +79,23 @@
     
         <div>
             <h3>Ques-3: What is Event Loop and how does it work ?</h3>
-            <p>Answer: There are .</p>
+            <p><strong>Answer: </strong> The event loop has simple job to monitor the Call Stack and the Callback Queue. It is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks the Task Queue for available callbacks.</p>
+            <ol type ="a">
+                <li>When an event or task is registered, it is added to a queue known as the "task queue". The Event Loop then continuously checks this queue for pending tasks. If there are tasks waiting to be executed, the Event Loop takes each task from the queue one by one, and executes it.
+                </li>
+
+                <li>
+                    Once a task is executed, the Event Loop checks if any other tasks have been added to the queue. If there are, it executes them in the same way, otherwise it waits for new tasks to be added to the queue before checking it again.
+            <br>
+                </li>
+                <br>
+                <li>This process of constantly checking the task queue for pending tasks, executing them one by one, and then waiting for new tasks to be added is what allows asynchronous programs to be non-blocking, and allows them to handle multiple operations concurrently.
+                </li>
+
+
+
+            </ol>
+
     
         </div>
     
